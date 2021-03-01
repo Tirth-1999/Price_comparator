@@ -57,11 +57,11 @@ def send_mail(name, link, price):
     server.ehlo()
     server.starttls()
     server.ehlo()
-    server.login('tirthdhara108@gmail.com', 'xjcjbgdomnwwcrcb')
+    server.login('enter_your@email.com', 'enter_your_key')
     subject = "HEY HERE IS YOUR SELECTED PRODUCT  " + name
     body = "If you wanna check " + link
     msg = f'Subject:{subject}\n\n body: {subject}\n {body} \n Current price :{price}'
-    server.sendmail('tirthdhara108@gmail.com', 'tirth.170410107110@gmail.com', msg)
+    server.sendmail('enter_your@email.com', 'enter_your@email.com', msg)
     server.quit()
 
 
